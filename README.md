@@ -62,3 +62,95 @@ This pipeline annotates a txt input file containing min 5 columns (`"Chr\tStart\
 - Clinseqc_minor:	The number of minor alleles, which can be either the reference or the variant allele.
 - Clinseqmaf:	The frequency of the minor allele compared to the sum of all alleles.
 - Clinseqchisquare:	The chi-square value (NOT p-value) calculated using the genotypes AA, Aa, aa where A is the major allele and a is the minor allele (major and minor can only be reference or variant)
+
+[CADD]: http://cadd.gs.washington.edu/
+- CADD:  Combined Annotation Dependent Depletion (CADD) Score
+- CADD_Phred:  Combined Annotation Dependent Depletion (CADD) Score
+
+[SIFT]: http://sift.jcvi.org/
+- SIFT Prediction: Prediction from SIFT (DAMAGING, TOLERATED, Not scored, Damaging due to stop, N/A, DAMAGING *Warning! Low confidence.)
+- SIFT Score: 0 = DAMAGING, 1 = TOLERATED, N/A = Damaging due to stop, Not scored, N/A
+
+[PolyPhen-2]: http://genetics.bwh.harvard.edu/pph2/
+- PPH2 Prediction:(benign, possibly damaging, probably damaging)
+- PPH2 Class: (neutral, deleterious)
+- PPH2 Probability: (neutral, deleterious)
+
+- [clinvar_20150330]: http://www.ncbi.nlm.nih.gov/clinvar/
+- [cosmic70]: http://cancer.sanger.ac.uk/cancergenome/projects/cosmic/
+
+[HGMD]: https://portal.biobase-international.com/hgmd/pro/global.php#other
+NIH Users can create account and access the database [here]: https://portal.biobase-international.com/cgi-bin/portal/login.cgi 
+Enter the code 1881-6975-97565225 in the license field during the account registration process.
+
+- hgmd2014.3_Acc-No: If HGMD member, accession number, gene name, defination, disease related to in HGMD, Category as defined by HGMD, and Reference Pubmed ID.
+- hgmd2014.3.Gene: Gene Name
+- hgmd2014.3_GeneName: Full Name
+- hgmd2014.3_Disease: Associated Disease
+- hgmd2014.3_Category: Category as defined by hgmd.
+- hgmd2014.3_Reference_PMID: PubMed ID
+
+-MATCH.v3 Gene
+-MATCH.v3 Inclusion Mutation
+-MATCH.v3 Arm description
+-MATCH.v3 Level of Evidence 
+-DoCM Disease
+-DoCM PMID
+-MyCG_Gene
+-MyCG_Codon
+-MyCG_Diagnosis
+-MyCG_Targated Therapy
+-MyCG_Other Implications
+-Total_ICGC
+-Count_TCGA_ALL
+-2008.Parsons.Glio.Multiforme
+-2010Barretina.SoftTissueSarcoma
+-2011Heravi.DICER1
+-2011Rausch.Medulloblastoma
+-2011.Zhang Retinoblastoma
+-2012Cheung.NB
+-2012Gruber.AML
+-2012Harrison.PoorRiskLeukemia
+-2012.Jones Medulloblastoma
+-2012Kannar.LowerGradeGlioma
+-2012.Lee.Rhabdoid
+-2012Molenaar.NB
+-2012Roberts.HighRiskALL
+-2012Robinson.Medulloblastoma.Germline
+-2012Robinson.Medulloblastoma Somatic
+-2012Wu.Glioblastoma
+-2012Zhang.ALL
+-2013.Chen Rhabdo 
+-2013Holmfeldt.HyperdiploidALL
+-2013Loh.ALL
+-2013.Pugh.NB
+-2013Sausen
+-2013Zhang.Glioma
+-2014Chen.Osteo
+-2014.Huether.1000PediatricCancerGenomes
+-2014.Shern Rhabdo (44)
+-2014.Wu High Grade Glioma(116)
+-2014.Brohl.EWS
+-2013.Dorschner.Actionable
+-2013.Wei.DW
+-2014.Shern.RMSExpressed
+-2014Tirode.EWS
+-2014Crompton.EWS
+-PCG_Total
+-Grand_Total
+-UVM #Centers
+-UVM #Samples
+-IF.Actionable-exomic-incidental-findings
+-IF.Name
+-IF.Condition(s)
+-IF.Frequency
+-IF.Clinical-significance (Last reviewed)
+-IF.Review status
+-Gene.refGene
+-ACMG_Disease
+-ACMG_Age-to-Report
+-ACMG_Gene-Reviews-PubMedID
+-ACMG_Inheritance
+-ACMG_Known-vs-Expected
+-ACMG_LSDB
+---
