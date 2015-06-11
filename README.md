@@ -77,12 +77,14 @@ This pipeline annotates a txt input file containing min 5 columns (`"Chr\tStart\
 - PPH2 Probability: (neutral, deleterious)
 
 - [clinvar_20150330]: http://www.ncbi.nlm.nih.gov/clinvar/
+[clinvar_20150330]: http://www.ncbi.nlm.nih.gov/clinvar/
+
 - [cosmic70]: http://cancer.sanger.ac.uk/cancergenome/projects/cosmic/
+[cosmic70]: http://cancer.sanger.ac.uk/cancergenome/projects/cosmic/
 
 [HGMD]: https://portal.biobase-international.com/hgmd/pro/global.php#other
-NIH Users can create account and access the database [here]: https://portal.biobase-international.com/cgi-bin/portal/login.cgi 
-Enter the code 1881-6975-97565225 in the license field during the account registration process.
-
+NIH Users can create account and access the database [here]. Enter the code 1881-6975-97565225 in the license field during the account registration process.
+[here]: https://portal.biobase-international.com/cgi-bin/portal/login.cgi
 - hgmd2014.3_Acc-No: If HGMD member, accession number, gene name, defination, disease related to in HGMD, Category as defined by HGMD, and Reference Pubmed ID.
 - hgmd2014.3.Gene: Gene Name
 - hgmd2014.3_GeneName: Full Name
