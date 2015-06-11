@@ -63,25 +63,29 @@ This pipeline annotates a txt input file containing min 5 columns (`"Chr\tStart\
 - Clinseqmaf:	The frequency of the minor allele compared to the sum of all alleles.
 - Clinseqchisquare:	The chi-square value (NOT p-value) calculated using the genotypes AA, Aa, aa where A is the major allele and a is the minor allele (major and minor can only be reference or variant)
 
+[CADD]
 [CADD]: http://cadd.gs.washington.edu/
 - CADD:  Combined Annotation Dependent Depletion (CADD) Score
 - CADD_Phred:  Combined Annotation Dependent Depletion (CADD) Score
 
+[SIFT]
 [SIFT]: http://sift.jcvi.org/
 - SIFT Prediction: Prediction from SIFT (DAMAGING, TOLERATED, Not scored, Damaging due to stop, N/A, DAMAGING *Warning! Low confidence.)
 - SIFT Score: 0 = DAMAGING, 1 = TOLERATED, N/A = Damaging due to stop, Not scored, N/A
 
+[PolyPhen-2]
 [PolyPhen-2]: http://genetics.bwh.harvard.edu/pph2/
 - PPH2 Prediction:(benign, possibly damaging, probably damaging)
 - PPH2 Class: (neutral, deleterious)
 - PPH2 Probability: (neutral, deleterious)
 
-- [clinvar_20150330]:
+- [clinvar_20150330]
 [clinvar_20150330]: http://www.ncbi.nlm.nih.gov/clinvar/
 
-- [cosmic70]:
+- [cosmic70]
 [cosmic70]: http://cancer.sanger.ac.uk/cancergenome/projects/cosmic/
 
+[HGMD]
 [HGMD]: https://portal.biobase-international.com/hgmd/pro/global.php#other
 NIH Users can create account and access the database [here]. Enter the code 1881-6975-97565225 in the license field during the account registration process.
 [here]: https://portal.biobase-international.com/cgi-bin/portal/login.cgi
@@ -92,19 +96,19 @@ NIH Users can create account and access the database [here]. Enter the code 1881
 - hgmd2014.3_Category: Category as defined by hgmd.
 - hgmd2014.3_Reference_PMID: PubMed ID
 
-[MATCH]: Trial 
+[MATCH] Trial 
 [MATCH]: http://www.cancer.gov/about-cancer/treatment/clinical-trials/nci-supported/nci-match
 - MATCH.v3 Gene: Gene Name
 - MATCH.v3 Inclusion Mutation: Amino Acid Change
 - MATCH.v3 Arm description 
 - MATCH.v3 Level of Evidence 
 
-[DoCM]: Database of Curated Mutations
+[DoCM] Database of Curated Mutations
 [DoCM]: http://docm.genome.wustl.edu/
 - DoCM Disease: Name of the cancer type
 - DoCM PMID: PubMed ID
 
-[My Cancer Genome]: If this particular mutation is present in MCG
+[My Cancer Genome] If this particular mutation is present in MCG
 [My Cancer Genome]: http://www.mycancergenome.org/
 - MyCG_Gene: Name of the gene
 - MyCG_Codon: Codon change in database
@@ -113,43 +117,82 @@ NIH Users can create account and access the database [here]. Enter the code 1881
 - MyCG_Other Implications: Other implications
 
 
-- [Total_ICGC]:(https://icgc.org/)
-- [Count_TCGA_ALL]: http://www.cbioportal.org/public-portal/index.do
-- 2008.Parsons.Glio.Multiforme: 
-- 2010Barretina.SoftTissueSarcoma
-- 2011Heravi.DICER1
-- 2011Rausch.Medulloblastoma
-- 2011.Zhang Retinoblastoma
-- 2012Cheung.NB
-- 2012Gruber.AML
-- 2012Harrison.PoorRiskLeukemia
-- 2012.Jones Medulloblastoma
-- 2012Kannar.LowerGradeGlioma
-- 2012.Lee.Rhabdoid
-- 2012Molenaar.NB
-- 2012Roberts.HighRiskALL
-- 2012Robinson.Medulloblastoma.Germline
-- 2012Robinson.Medulloblastoma Somatic
-- 2012Wu.Glioblastoma
-- 2012Zhang.ALL
-- 2013.Chen Rhabdo 
-- 2013Holmfeldt.HyperdiploidALL
-- 2013Loh.ALL
-- 2013.Pugh.NB
-- 2013Sausen
-- 2013Zhang.Glioma
-- 2014Chen.Osteo
-- 2014.Huether.1000PediatricCancerGenomes
-- 2014.Shern Rhabdo (44)
-- 2014.Wu High Grade Glioma(116)
-- 2014.Brohl.EWS
-- 2013.Dorschner.Actionable
-- 2013.Wei.DW
-- 2014.Shern.RMSExpressed
-- 2014Tirode.EWS
-- 2014Crompton.EWS
-- PCG_Total
-- Grand_Total
+- [Total_ICGC] No of sample have mutation in ICGC population (~6500 Patients, ~50 Cancer types)
+[Total_ICGC]: https://icgc.org/
+- [Count_TCGA_ALL] (~16K Samples)
+[Count_TCGA_ALL]: http://www.cbioportal.org/public-portal/index.do
+- [2008.Parsons.Glio.Multiforme]
+[2008.Parsons.Glio.Multiforme]: http://www.sciencemag.org/content/321/5897/1807
+- [2010Barretina.SoftTissueSarcoma]
+[2010Barretina.SoftTissueSarcoma]: http://www.ncbi.nlm.nih.gov/pubmed/20601955
+- [2011Heravi.DICER1]
+[2011Heravi.DICER1]: http://www.ncbi.nlm.nih.gov/pubmed/22187960
+- [2011Rausch.Medulloblastoma]
+[2011Rausch.Medulloblastoma]: http://www.ncbi.nlm.nih.gov/pubmed/22265402
+- [2011.Zhang Retinoblastoma]
+[2011.Zhang Retinoblastoma]:http://www.nature.com/nature/journal/v481/n7381/full/nature10733.html
+- [2012Cheung.NB]
+[2012Cheung.NB]:http://www.ncbi.nlm.nih.gov/pubmed/22416102
+- [2012Gruber.AML]
+[2012Gruber.AML]:http://www.ncbi.nlm.nih.gov/pubmed/23153540
+- [2012Harrison.PoorRiskLeukemia]
+[2012Harrison.PoorRiskLeukemia]:http://www.sciencedirect.com/science/article/pii/S1535610812003042
+- [2012.Jones Medulloblastoma]
+[2012.Jones Medulloblastoma]:http://www.nature.com/nature/journal/v488/n7409/full/nature11284.html
+- [2012Kannar.LowerGradeGlioma]
+[2012Kannar.LowerGradeGlioma]: http://www.ncbi.nlm.nih.gov/pubmed/23104868
+- [2012.Lee.Rhabdoid]
+[2012.Lee.Rhabdoid]: http://www.ncbi.nlm.nih.gov/pubmed/22797305
+- [2012Molenaar.NB]
+[2012Molenaar.NB]: http://www.nature.com/nature/journal/v483/n7391/full/nature10910.html
+- [2012Roberts.HighRiskALL]
+[2012Roberts.HighRiskALL]: http://www.ncbi.nlm.nih.gov/pubmed/22897847
+- [2012Robinson.Medulloblastoma.Germline]
+[2012Robinson.Medulloblastoma.Germline]: http://www.ncbi.nlm.nih.gov/pubmed/22722829
+- [2012Robinson.Medulloblastoma Somatic]
+[2012Robinson.Medulloblastoma Somatic]: http://www.ncbi.nlm.nih.gov/pubmed/22722829
+
+2012Wu.Glioblastoma     http://www.ncbi.nlm.nih.gov/pubmed/22286216
+2012Zhang.ALL   http://www.nature.com/nature/journal/v481/n7380/full/nature10725.html
+2013.Chen Rhabdo        http://www.ncbi.nlm.nih.gov/pubmed/24332040
+2013Holmfeldt.HyperdiploidALL   http://www.ncbi.nlm.nih.gov/pubmed/23334668
+2013Loh.ALL     http://www.ncbi.nlm.nih.gov/pubmed/23212523
+2013.Pugh.NB    http://www.ncbi.nlm.nih.gov/pubmed/23334666
+2013Sausen      http://www.nature.com/ng/journal/v45/n1/full/ng.2493.html
+2013Zhang.Glioma        http://www.nature.com/ng/journal/v45/n6/full/ng.2611.html
+2014Chen.Osteo  http://www.cell.com/cell-reports/abstract/S2211-1247(14)00165-X
+2014.Huether.1000PediatricCancerGenomes http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4119022/
+2014.Shern Rhabdo (44)  http://cancerdiscovery.aacrjournals.org/content/4/2/216.figures-only?cited-by=yes&legid=candisc;4/2/216
+2014.Wu High Grade Glioma(116)  http://www.nature.com/ng/journal/v46/n5/full/ng.2938.html
+2014.Brohl.EWS  http://www.ncbi.nlm.nih.gov/pubmed/25010205
+2013.Dorschner.Actionable       http://www.sciencedirect.com/science/article/pii/S0002929713003819
+2013.Wei.DW     http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0077731
+2014.Shern.RMSExpressed http://cancerdiscovery.aacrjournals.org/content/4/2/216.figures-only?cited-by=yes&legid=candisc;4/2/216
+2014Tirode.EWS  http://cancerdiscovery.aacrjournals.org/content/early/2014/09/13/2159-8290.CD-14-0622.abstract
+2014Crompton.EWS        http://cancerdiscovery.aacrjournals.org/content/early/2014/09/03/2159-8290.CD-13-1037.abstract
+
+
+- [2012Wu.Glioblastoma]
+- [2012Zhang.ALL]
+- [2013.Chen Rhabdo] 
+- [2013Holmfeldt.HyperdiploidALL]
+- [2013Loh.ALL]
+- [2013.Pugh.NB]
+- [2013Sausen]
+- [2013Zhang.Glioma]
+- [2014Chen.Osteo]
+- [2014.Huether.1000PediatricCancerGenomes]
+- [2014.Shern Rhabdo (44)]
+- [2014.Wu High Grade Glioma(116)]
+- [[2014.Brohl.EWS]
+- [2013.Dorschner.Actionable]
+- [2013.Wei.DW]
+- [2014.Shern.RMSExpressed]
+- [2014Tirode.EWS]
+- [2014Crompton.EWS]
+- [PCG_Total]
+- [Grand_Total]
+
 - UVM #Centers
 - UVM #Samples
 - IF.Actionable-exomic-incidental-findings
