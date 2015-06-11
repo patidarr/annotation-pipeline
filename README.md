@@ -151,50 +151,49 @@ NIH Users can create account and access the database [here]. Enter the code 1881
 [2012Robinson.Medulloblastoma.Germline]: http://www.ncbi.nlm.nih.gov/pubmed/22722829
 - [2012Robinson.Medulloblastoma Somatic]
 [2012Robinson.Medulloblastoma Somatic]: http://www.ncbi.nlm.nih.gov/pubmed/22722829
-
-2012Wu.Glioblastoma     http://www.ncbi.nlm.nih.gov/pubmed/22286216
-2012Zhang.ALL   http://www.nature.com/nature/journal/v481/n7380/full/nature10725.html
-2013.Chen Rhabdo        http://www.ncbi.nlm.nih.gov/pubmed/24332040
-2013Holmfeldt.HyperdiploidALL   http://www.ncbi.nlm.nih.gov/pubmed/23334668
-2013Loh.ALL     http://www.ncbi.nlm.nih.gov/pubmed/23212523
-2013.Pugh.NB    http://www.ncbi.nlm.nih.gov/pubmed/23334666
-2013Sausen      http://www.nature.com/ng/journal/v45/n1/full/ng.2493.html
-2013Zhang.Glioma        http://www.nature.com/ng/journal/v45/n6/full/ng.2611.html
-2014Chen.Osteo  http://www.cell.com/cell-reports/abstract/S2211-1247(14)00165-X
-2014.Huether.1000PediatricCancerGenomes http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4119022/
-2014.Shern Rhabdo (44)  http://cancerdiscovery.aacrjournals.org/content/4/2/216.figures-only?cited-by=yes&legid=candisc;4/2/216
-2014.Wu High Grade Glioma(116)  http://www.nature.com/ng/journal/v46/n5/full/ng.2938.html
-2014.Brohl.EWS  http://www.ncbi.nlm.nih.gov/pubmed/25010205
-2013.Dorschner.Actionable       http://www.sciencedirect.com/science/article/pii/S0002929713003819
-2013.Wei.DW     http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0077731
-2014.Shern.RMSExpressed http://cancerdiscovery.aacrjournals.org/content/4/2/216.figures-only?cited-by=yes&legid=candisc;4/2/216
-2014Tirode.EWS  http://cancerdiscovery.aacrjournals.org/content/early/2014/09/13/2159-8290.CD-14-0622.abstract
-2014Crompton.EWS        http://cancerdiscovery.aacrjournals.org/content/early/2014/09/03/2159-8290.CD-13-1037.abstract
-
-
 - [2012Wu.Glioblastoma]
+[2012Wu.Glioblastoma]:http://www.ncbi.nlm.nih.gov/pubmed/22286216
 - [2012Zhang.ALL]
+[2012Zhang.ALL]:http://www.nature.com/nature/journal/v481/n7380/full/nature10725.html
 - [2013.Chen Rhabdo] 
+[2013.Chen Rhabdo]:http://www.ncbi.nlm.nih.gov/pubmed/24332040
 - [2013Holmfeldt.HyperdiploidALL]
+[2013Holmfeldt.HyperdiploidALL]:http://www.ncbi.nlm.nih.gov/pubmed/23334668
 - [2013Loh.ALL]
+[2013Loh.ALL]:http://www.ncbi.nlm.nih.gov/pubmed/23212523
 - [2013.Pugh.NB]
+[2013.Pugh.NB]:http://www.ncbi.nlm.nih.gov/pubmed/23334666
 - [2013Sausen]
+[2013Sausen]:http://www.nature.com/ng/journal/v45/n1/full/ng.2493.html
 - [2013Zhang.Glioma]
+[2013Zhang.Glioma]:http://www.nature.com/ng/journal/v45/n6/full/ng.2611.html
 - [2014Chen.Osteo]
+[2014Chen.Osteo]:http://www.cell.com/cell-reports/abstract/S2211-1247(14)00165-X
 - [2014.Huether.1000PediatricCancerGenomes]
+[2014.Huether.1000PediatricCancerGenomes]: http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4119022/
 - [2014.Shern Rhabdo (44)]
+[2014.Shern Rhabdo (44)]:  http://cancerdiscovery.aacrjournals.org/content/4/2/216.figures-only?cited-by=yes&legid=candisc;4/2/216
 - [2014.Wu High Grade Glioma(116)]
+[2014.Wu High Grade Glioma(116)]:http://www.nature.com/ng/journal/v46/n5/full/ng.2938.html
 - [[2014.Brohl.EWS]
+[2014.Brohl.EWS]:http://www.ncbi.nlm.nih.gov/pubmed/25010205
 - [2013.Dorschner.Actionable]
+[2013.Dorschner.Actionable]:http://www.sciencedirect.com/science/article/pii/S0002929713003819
 - [2013.Wei.DW]
+[2013.Wei.DW]:http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0077731
 - [2014.Shern.RMSExpressed]
+[2014.Shern.RMSExpressed]:http://cancerdiscovery.aacrjournals.org/content/4/2/216.figures-only?cited-by=yes&legid=candisc;4/2/216
 - [2014Tirode.EWS]
+[2014Tirode.EWS]:http://cancerdiscovery.aacrjournals.org/content/early/2014/09/13/2159-8290.CD-14-0622.abstract
 - [2014Crompton.EWS]
-- [PCG_Total]
-- [Grand_Total]
+[2014Crompton.EWS]:http://cancerdiscovery.aacrjournals.org/content/early/2014/09/03/2159-8290.CD-13-1037.abstract
+# - PCG_Total: Total number of patients in all stidies above.
+#- [Grand_Total]: Total of PCG ICGC and TCGA.
 
-- UVM #Centers
-- UVM #Samples
+#Data from 80 [uvial melanoma study(TCGA)], samples were sequenced at 4 institutions.
+[uvial melanoma study(TCGA)]: https://tcga-data.nci.nih.gov/tcga/tcgaCancerDetails.jsp?diseaseType=UVM&diseaseName=Uveal%20Melanoma
+- UVM #Centers: ";" seperated count of centers a particular mutation is found in a sample.
+- UVM #Samples: Total number of samples harbouring mutation
 - IF.Actionable-exomic-incidental-findings
 - IF.Name
 - IF.Condition(s)
