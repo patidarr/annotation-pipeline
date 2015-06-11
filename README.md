@@ -1,15 +1,16 @@
 #annotation-pipeline
 
-This pipeline annotates a txt input file containing min 5 columns (`Chr\tStart\tEnd\tRef\tAlt`) with the following annotations,
+This pipeline annotates a txt input file containing min 5 columns (`Chr\tStart\tEnd\tRef\tAlt`) with the following annotations.
+
 [ANNOVAR]
 [ANNOVAR]: http://annovar.openbioinformatics.org/en/latest/
-- Func.refGene: Tells whether the variant hit exons or hit intergenic regions, or hit introns, or hit a non-coding RNA genes.
-- Gene.refGene: If the variant is exonic/intronic/ncRNA, this column gives the gene name (if multiple genes are hit, comma will be added between gene names); if not, the column will give the two neighboring genes and the distance to these neighboring genes.
+- Func.refGene:	Tells whether the variant hit exons or hit intergenic regions, or hit introns, or hit a non-coding RNA genes.
+- Gene.refGene:	If the variant is exonic/intronic/ncRNA, this column gives the gene name (if multiple genes are hit, comma will be added between gene names); if not, the column will give the two neighboring genes and the distance to these neighboring genes.
 - GeneDetail.refGene: 
-- ExonicFunc.refGene: Tells the functional consequences of the variant (possible values in this fields include: nonsynonymous SNV, synonymous SNV, frameshift insertion, frameshift deletion, nonframeshift insertion, nonframeshift deletion, frameshift block substitution, nonframshift block substitution)
-- AAChange.refGene: Gene name, the transcript identifier and the sequence change in the corresponding transcript. 
+- ExonicFunc.refGene:	Tells the functional consequences of the variant (possible values in this fields include: nonsynonymous SNV, synonymous SNV, frameshift insertion, frameshift deletion, nonframeshift insertion, nonframeshift deletion, frameshift block substitution, nonframshift block substitution)
+- AAChange.refGene:	Gene name, the transcript identifier and the sequence change in the corresponding transcript. 
 - cytoBand: Cytogenic band.
-- snp138: dbsnp138 annotation. if present then rs id will be present else -1
+- snp138:	dbsnp138 annotation. if present then rs id will be present else -1
 
 [Frequencies from 1000 genome new release]
 [Frequencies from 1000 genome new release]: http://www.1000genomes.org/category/frequently-asked-questions/population
