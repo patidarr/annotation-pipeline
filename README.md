@@ -187,19 +187,27 @@ NIH Users can create account and access the database [here]. Enter the code 1881
 [2014Tirode.EWS]:http://cancerdiscovery.aacrjournals.org/content/early/2014/09/13/2159-8290.CD-14-0622.abstract
 - [2014Crompton.EWS]
 [2014Crompton.EWS]:http://cancerdiscovery.aacrjournals.org/content/early/2014/09/03/2159-8290.CD-13-1037.abstract
-# - PCG_Total: Total number of patients in all stidies above.
-#### - Grand_Total####: Total of PCG ICGC and TCGA.
+#### - PCG_Total: Total number of patients in all stidies above.
+#### - Grand_Total: Total of PCG ICGC and TCGA.
 
-#Data from 80 [uvial melanoma study(TCGA)], samples were sequenced at 4 institutions.
+####Data from 80 [uvial melanoma study(TCGA)], samples were sequenced at 4 institutions.
 [uvial melanoma study(TCGA)]: https://tcga-data.nci.nih.gov/tcga/tcgaCancerDetails.jsp?diseaseType=UVM&diseaseName=Uveal%20Melanoma
 - UVM #Centers: ";" seperated count of centers a particular mutation is found in a sample.
 - UVM #Samples: Total number of samples harbouring mutation
-- IF.Actionable-exomic-incidental-findings
-- IF.Name
-- IF.Condition(s)
-- IF.Frequency
-- IF.Clinical-significance (Last reviewed)
-- IF.Review status
+
+Data from `Actionable exomic incidental findings in 6503 participants: challenges of variant classification`
+
+[PMID]
+[PMID]: 25637381
+- IF.Actionable-exomic-incidental-findings: Yes/No
+- IF.Name:Name: Change reported in paper
+- IF.Condition(s): Cancer/syndrome/disease name
+- IF.Frequency: Frequency in population
+- IF.Clinical-significance (Last reviewed): Last reviewed accoriding to clinvar
+- IF.Review status: Review status
+
+57 [ACMG] genes and the pertinent information.
+[ACMG]:https://www.acmg.net/docs/ACMG_Releases_Highly-Anticipated_Recommendations_on_Incidental_Findings_in_Clinical_Exome_and_Genome_Sequencing.pdf
 - Gene.refGene
 - ACMG_Disease
 - ACMG_Age-to-Report
