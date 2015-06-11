@@ -2,7 +2,7 @@
 
 This pipeline annotates a txt input file containing min 5 columns (`"Chr\tStart\tEnd\tRef\tAlt"`) with the following annotations.
 
-[ANNOVAR]
+###[ANNOVAR]
 [ANNOVAR]: http://annovar.openbioinformatics.org/en/latest/
 - Func.refGene:	Tells whether the variant hit exons or hit intergenic regions, or hit introns, or hit a non-coding RNA genes.
 - Gene.refGene:	If the variant is exonic/intronic/ncRNA, this column gives the gene name (if multiple genes are hit, comma will be added between gene names); if not, the column will give the two neighboring genes and the distance to these neighboring genes.
