@@ -188,7 +188,7 @@ NIH Users can create account and access the database [here]. Enter the code 1881
 - [2014Crompton.EWS]
 [2014Crompton.EWS]:http://cancerdiscovery.aacrjournals.org/content/early/2014/09/03/2159-8290.CD-13-1037.abstract
 # - PCG_Total: Total number of patients in all stidies above.
-#- [Grand_Total]: Total of PCG ICGC and TCGA.
+#### - Grand_Total####: Total of PCG ICGC and TCGA.
 
 #Data from 80 [uvial melanoma study(TCGA)], samples were sequenced at 4 institutions.
 [uvial melanoma study(TCGA)]: https://tcga-data.nci.nih.gov/tcga/tcgaCancerDetails.jsp?diseaseType=UVM&diseaseName=Uveal%20Melanoma
