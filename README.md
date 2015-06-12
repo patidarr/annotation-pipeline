@@ -215,3 +215,6 @@ Data from `Actionable exomic incidental findings in 6503 participants: challenge
 - **ACMG_Inheritance**
 - **ACMG_Known-vs-Expected**
 - **ACMG_LSDB**
+
+## How to run .
+`perl annotation-pipeline.pl -infile <NameOfYourFile>`
