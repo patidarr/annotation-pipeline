@@ -4,7 +4,7 @@ This pipeline annotates a txt input file containing min 5 columns (`"Chr\tStart\
 
 ####[ANNOVAR]
 [ANNOVAR]: http://annovar.openbioinformatics.org/en/latest/
-- Func.refGene:	Tells whether the variant hit exons or hit intergenic regions, or hit introns, or hit a non-coding RNA genes.
+- **Func.refGene**:	Tells whether the variant hit exons or hit intergenic regions, or hit introns, or hit a non-coding RNA genes.
 - Gene.refGene:	If the variant is exonic/intronic/ncRNA, this column gives the gene name (if multiple genes are hit, comma will be added between gene names); if not, the column will give the two neighboring genes and the distance to these neighboring genes.
 - GeneDetail.refGene: 
 - ExonicFunc.refGene:	Tells the functional consequences of the variant (possible values in this fields include: nonsynonymous SNV, synonymous SNV, frameshift insertion, frameshift deletion, nonframeshift insertion, nonframeshift deletion, frameshift block substitution, nonframshift block substitution)
@@ -68,7 +68,7 @@ This pipeline annotates a txt input file containing min 5 columns (`"Chr\tStart\
 - CADD:  Combined Annotation Dependent Depletion (CADD) Score
 - CADD_Phred:  Combined Annotation Dependent Depletion (CADD) Score
 
-#####[SIFT]
+####[SIFT]
 [SIFT]: http://sift.jcvi.org/
 - SIFT Prediction: Prediction from SIFT (DAMAGING, TOLERATED, Not scored, Damaging due to stop, N/A, DAMAGING *Warning! Low confidence.)
 - SIFT Score: 0 = DAMAGING, 1 = TOLERATED, N/A = Damaging due to stop, Not scored, N/A
