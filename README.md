@@ -41,6 +41,7 @@ This pipeline annotates a txt input file containing min 5 columns (`"Chr\tStart\
 - **ExAC_NFE**: Non-Finnish Europian
 - **ExAC_OTH**: Other
 - **ExAC_SAS**: South Asian
+
 [ClinSeq]
 [ClinSeq]: http://www.genome.gov/20519355
 - **Clinseqc_genotypes**:	The number of genotypes with MPG score >=10.
