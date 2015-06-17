@@ -124,52 +124,52 @@ NIH Users can create account and access the database [here]. Enter the code 1881
 [Count_TCGA_ALL]: http://www.cbioportal.org/public-portal/index.do
 - **[2008.Parsons.Glio.Multiforme]**
 [2008.Parsons.Glio.Multiforme]: http://www.sciencemag.org/content/321/5897/1807
-- **[2010Barretina.SoftTissueSarcoma]**
-[2010Barretina.SoftTissueSarcoma]: http://www.ncbi.nlm.nih.gov/pubmed/20601955
-- **[2011Heravi.DICER1]**
-[2011Heravi.DICER1]: http://www.ncbi.nlm.nih.gov/pubmed/22187960
-- **[2011Rausch.Medulloblastoma]**
-[2011Rausch.Medulloblastoma]: http://www.ncbi.nlm.nih.gov/pubmed/22265402
+- **[2010.Barretina.SoftTissueSarcoma]**
+[2010.Barretina.SoftTissueSarcoma]: http://www.ncbi.nlm.nih.gov/pubmed/20601955
+- **[2011.Heravi.DICER1]**
+[2011.Heravi.DICER1]: http://www.ncbi.nlm.nih.gov/pubmed/22187960
+- **[2011.Rausch.Medulloblastoma]**
+[2011.Rausch.Medulloblastoma]: http://www.ncbi.nlm.nih.gov/pubmed/22265402
 - **[2011.Zhang Retinoblastoma]**
 [2011.Zhang Retinoblastoma]:http://www.nature.com/nature/journal/v481/n7381/full/nature10733.html
-- **[2012Cheung.NB]**
-[2012Cheung.NB]:http://www.ncbi.nlm.nih.gov/pubmed/22416102
-- **[2012Gruber.AML]**
-[2012Gruber.AML]:http://www.ncbi.nlm.nih.gov/pubmed/23153540
-- **[2012Harrison.PoorRiskLeukemia]**
-[2012Harrison.PoorRiskLeukemia]:http://www.sciencedirect.com/science/article/pii/S1535610812003042
+- **[2012.Cheung.NB]**
+[2012.Cheung.NB]:http://www.ncbi.nlm.nih.gov/pubmed/22416102
+- **[2012.Gruber.AML]**
+[2012.Gruber.AML]:http://www.ncbi.nlm.nih.gov/pubmed/23153540
+- **[2012.Harrison.PoorRiskLeukemia]**
+[2012.Harrison.PoorRiskLeukemia]:http://www.sciencedirect.com/science/article/pii/S1535610812003042
 - **[2012.Jones Medulloblastoma]**
 [2012.Jones Medulloblastoma]:http://www.nature.com/nature/journal/v488/n7409/full/nature11284.html
-- **[2012Kannar.LowerGradeGlioma]**
-[2012Kannar.LowerGradeGlioma]: http://www.ncbi.nlm.nih.gov/pubmed/23104868
+- **[2012.Kannar.LowerGradeGlioma]**
+[2012.Kannar.LowerGradeGlioma]: http://www.ncbi.nlm.nih.gov/pubmed/23104868
 - **[2012.Lee.Rhabdoid]**
 [2012.Lee.Rhabdoid]: http://www.ncbi.nlm.nih.gov/pubmed/22797305
-- **[2012Molenaar.NB]**
-[2012Molenaar.NB]: http://www.nature.com/nature/journal/v483/n7391/full/nature10910.html
-- **[2012Roberts.HighRiskALL]**
-[2012Roberts.HighRiskALL]: http://www.ncbi.nlm.nih.gov/pubmed/22897847
-- **[2012Robinson.Medulloblastoma.Germline]**
-[2012Robinson.Medulloblastoma.Germline]: http://www.ncbi.nlm.nih.gov/pubmed/22722829
-- **[2012Robinson.Medulloblastoma Somatic]**
-[2012Robinson.Medulloblastoma Somatic]: http://www.ncbi.nlm.nih.gov/pubmed/22722829
-- **[2012Wu.Glioblastoma]**
-[2012Wu.Glioblastoma]:http://www.ncbi.nlm.nih.gov/pubmed/22286216
-- **[2012Zhang.ALL]**
-[2012Zhang.ALL]:http://www.nature.com/nature/journal/v481/n7380/full/nature10725.html
+- **[2012.Molenaar.NB]**
+[2012.Molenaar.NB]: http://www.nature.com/nature/journal/v483/n7391/full/nature10910.html
+- **[2012.Roberts.HighRiskALL]**
+[2012.Roberts.HighRiskALL]: http://www.ncbi.nlm.nih.gov/pubmed/22897847
+- **[2012.Robinson.Medulloblastoma.Germline]**
+[2012.Robinson.Medulloblastoma.Germline]: http://www.ncbi.nlm.nih.gov/pubmed/22722829
+- **[2012.Robinson.Medulloblastoma Somatic]**
+[2012.Robinson.Medulloblastoma Somatic]: http://www.ncbi.nlm.nih.gov/pubmed/22722829
+- **[2012.Wu.Glioblastoma]**
+[2012.Wu.Glioblastoma]:http://www.ncbi.nlm.nih.gov/pubmed/22286216
+- **[2012.Zhang.ALL]**
+[2012.Zhang.ALL]:http://www.nature.com/nature/journal/v481/n7380/full/nature10725.html
 - **[2013.Chen Rhabdo]**
 [2013.Chen Rhabdo]:http://www.ncbi.nlm.nih.gov/pubmed/24332040
-- **[2013Holmfeldt.HyperdiploidALL]**
-[2013Holmfeldt.HyperdiploidALL]:http://www.ncbi.nlm.nih.gov/pubmed/23334668
-- **[2013Loh.ALL]**
-[2013Loh.ALL]:http://www.ncbi.nlm.nih.gov/pubmed/23212523
+- **[2013.Holmfeldt.HyperdiploidALL]**
+[2013.Holmfeldt.HyperdiploidALL]:http://www.ncbi.nlm.nih.gov/pubmed/23334668
+- **[2013.Loh.ALL]**
+[2013.Loh.ALL]:http://www.ncbi.nlm.nih.gov/pubmed/23212523
 - **[2013.Pugh.NB]**
 [2013.Pugh.NB]:http://www.ncbi.nlm.nih.gov/pubmed/23334666
-- **[2013Sausen]**
-[2013Sausen]:http://www.nature.com/ng/journal/v45/n1/full/ng.2493.html
-- **[2013Zhang.Glioma]**
-[2013Zhang.Glioma]:http://www.nature.com/ng/journal/v45/n6/full/ng.2611.html
-- **[2014Chen.Osteo]**
-[2014Chen.Osteo]:http://www.cell.com/cell-reports/abstract/S2211-1247(14)00165-X
+- **[2013.Sausen]**
+[2013.Sausen]:http://www.nature.com/ng/journal/v45/n1/full/ng.2493.html
+- **[2013.Zhang.Glioma]**
+[2013.Zhang.Glioma]:http://www.nature.com/ng/journal/v45/n6/full/ng.2611.html
+- **[2014.Chen.Osteo]**
+[2014.Chen.Osteo]:http://www.cell.com/cell-reports/abstract/S2211-1247(14)00165-X
 - **[2014.Huether.1000PediatricCancerGenomes]**
 [2014.Huether.1000PediatricCancerGenomes]: http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4119022/
 - **[2014.Shern Rhabdo (44)]**
@@ -184,10 +184,10 @@ NIH Users can create account and access the database [here]. Enter the code 1881
 [2013.Wei.DW]:http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0077731
 - **[2014.Shern.RMSExpressed]**
 [2014.Shern.RMSExpressed]:http://cancerdiscovery.aacrjournals.org/content/4/2/216.figures-only?cited-by=yes&legid=candisc;4/2/216
-- **[2014Tirode.EWS]**
-[2014Tirode.EWS]:http://cancerdiscovery.aacrjournals.org/content/early/2014/09/13/2159-8290.CD-14-0622.abstract
-- **[2014Crompton.EWS]**
-[2014Crompton.EWS]:http://cancerdiscovery.aacrjournals.org/content/early/2014/09/03/2159-8290.CD-13-1037.abstract
+- **[2014.Tirode.EWS]**
+[2014.Tirode.EWS]:http://cancerdiscovery.aacrjournals.org/content/early/2014/09/13/2159-8290.CD-14-0622.abstract
+- **[2014.Crompton.EWS]**
+[2014.Crompton.EWS]:http://cancerdiscovery.aacrjournals.org/content/early/2014/09/03/2159-8290.CD-13-1037.abstract
 #### - PCG_Total: Total number of patients in all stidies above.
 #### - Grand_Total: Total of PCG ICGC and TCGA.
 
