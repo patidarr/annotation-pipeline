@@ -188,7 +188,7 @@ NIH Users can create account and access the database [here]. Enter the code 1881
 [2014.Tirode.EWS]:http://cancerdiscovery.aacrjournals.org/content/early/2014/09/13/2159-8290.CD-14-0622.abstract
 - **[2014.Crompton.EWS]**
 [2014.Crompton.EWS]:http://cancerdiscovery.aacrjournals.org/content/early/2014/09/03/2159-8290.CD-13-1037.abstract
-#### - PCG_Total: Total number of patients in all stidies above.
+#### - PCG_Total: Total number of patients in all studies above.
 #### - Grand_Total: Total of PCG ICGC and TCGA.
 
 ####Data from 80 [uvial melanoma study(TCGA)], samples were sequenced at 4 institutions.
