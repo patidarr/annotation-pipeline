@@ -118,9 +118,10 @@ $CUSTOM $DATADIR/${BUILD}_hgmd.2014.3.txt $file >$OUT.hgmd
 $CUSTOM $DATADIR/${BUILD}_MATCHTrial_v3_02_2015.txt $file >$OUT.match
 ################################
 # Add MyCG
-#
+#${BUILD}_MCG.02.27.15.txt
+#hg19_MCG.06.24.15.txt
 ################################
-$CUSTOM $DATADIR/${BUILD}_MCG.02.27.15.txt $file >$OUT.mcg
+$CUSTOM $DATADIR/${BUILD}_MCG.06.24.15.txt $file >$OUT.mcg
 ################################
 # Add DoCM
 #
