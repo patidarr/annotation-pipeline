@@ -3,19 +3,25 @@ use strict;
 use warnings;
 
 
-open(FH, $ARGV[0]);
+unless (open(FH, $ARGV[0])){
+	print STDERR "Can not find file $ARGV[0]\n";
+	exit;
+}
 print "Chr\tStart\tEnd\tRef\tAlt\tPPH2 Prediction\tPPH2 Class\tPPH2 Probability\n";
 while(<FH>){
 	chomp;
 	if($_ =~ /^#/){
 	}
-	elsif($_ !~ /unknown/ and $_ =~ /none/){
+	elsif($_ =~ /unknown/ and $_ =~ /none/){
+	}
+	else{
 		my @data = split("\t", $_);
+#		print "$data[55]\t$data[11]\t$data[14]\t$data[15]\n";
 		$data[11] =~ s/\s+//;
 		$data[14] =~ s/\s+//;
 		$data[15] =~ s/\s+//;
 		$data[55] =~ s/#//g;
-#		$data[55] =~ s/\s+//g;
+		$data[55] =~ s/\s+//g;
 		$data[55] =~ s/\|/,/g;
 		$data[55] =~ s/:/,/g;
 		$data[55] =~ s/\s+//g;

@@ -9,6 +9,7 @@ use Pod::Usage;
 # Annotation pipeline v1
 #
 ###############
+my $partition="ccr";
 my $host =`hostname`;
 chomp $host;
 if($host =~ /helix/){
@@ -21,20 +22,21 @@ my $data_dir = "/data/Clinomics/Ref/annovar";
 
 GetOptions(
 		'infile=s'	=>\$file,
+		'q=s'		=>\$partition,
 		help		=>sub {pod2usage(1);},
 	  )or pod2usage(2);
 
 =head1 SYNOPSIS
 
-annovar.pl[options]
-Usage:
+	annovar.pl[options]
+	Usage:
 	--infile	give the file containig output 
 	-infile is a file in which the first 5 columns are following 
-Chr	Start	End	Ref	Alt # User commnets(other columns)
-The program will output header to the annovar result if the headings of the first columns are same as above.
+	Chr	Start	End	Ref	Alt # User commnets(other columns)
+	The program will output header to the annovar result if the headings of the first columns are same as above.
+	-q 		partition
 
-More detailed documentation can be found in README file in the /data/khanlab/apps/annovar/
-
+	More detailed documentation can be found in README file in the /data/khanlab/apps/annovar/
 =cut
 
 my $DIR ='';
@@ -69,11 +71,27 @@ else{
 #########################
 `cd $DIR; $code_dir/MakeAnnotationInputs.pl $FILE `;
 
-my $annovar =`qsub -v CODE=$code_dir -v DIR=$DIR -v FILE=$FILE -q ccr -l nodes=1 $code_dir/TableAnno.sh`;
-my $SIFT    =`qsub -v CODE=$code_dir -v DIR=$DIR -v FILE=$FILE -q ccr -l nodes=1 $code_dir/SIFT.sh`;
-my $PPH     =`qsub -v CODE=$code_dir -v DIR=$DIR -v FILE=$FILE -q ccr -l nodes=1 $code_dir/PPH.sh`;
+#my $annovar =`qsub -v CODE=$code_dir -v DIR=$DIR -v FILE=$FILE -q ccr -l nodes=1 $code_dir/TableAnno.sh`;
+#my $SIFT    =`qsub -v CODE=$code_dir -v DIR=$DIR -v FILE=$FILE -q ccr -l nodes=1 $code_dir/SIFT.sh`;
+#my $PPH     =`qsub -v CODE=$code_dir -v DIR=$DIR -v FILE=$FILE -q ccr -l nodes=1 $code_dir/PPH.sh`;
+
+
+
+my $annovar =`sbatch --export=CODE=$code_dir,DIR=$DIR,FILE=$FILE --partition=$partition --time=100:00:00 --cpus-per-task=30 $code_dir/TableAnno.sh`;
+my $SIFT    =`sbatch --export=CODE=$code_dir,DIR=$DIR,FILE=$FILE --partition=$partition --time=100:00:00 --mem=5g --cpus-per-task=2 $code_dir/SIFT.sh`;
+my $PPH     =`sbatch --export=CODE=$code_dir,DIR=$DIR,FILE=$FILE --partition=$partition --time=100:00:00 --gres=lscratch:10 --cpus-per-task=2 $code_dir/PPH.sh`;
 chomp $annovar;
 chomp $SIFT;
 chomp $PPH;
-my $join    =`qsub -v CODE=$code_dir -v DIR=$DIR -v FILE=$FILE -q ccr -l nodes=1 -W depend=afterany:$annovar:$SIFT:$PPH $code_dir/combine.sh`;
+my $join    =`sbatch --export=CODE=$code_dir,DIR=$DIR,FILE=$FILE --partition=$partition --time=100:00:00 --mem=10g --dependency=afterany:$annovar:$SIFT:$PPH $code_dir/combine.sh`;
 print "$join";
+
+
+#my $annovar =`sbatch --export=CODE=$code_dir,DIR=$DIR,FILE=$FILE --partition=$partition --time=100:00:00 --cpus-per-task=2 $code_dir/TableAnno.sh`;
+#my $SIFT    =`sbatch --export=CODE=$code_dir,DIR=$DIR,FILE=$FILE --partition=$partition --time=100:00:00 --gres=lscratch:200 --cpus-per-task=2 $code_dir/SIFT.sh`;
+#my $PPH     =`sbatch --export=CODE=$code_dir,DIR=$DIR,FILE=$FILE --partition=$partition --exclusive --time=100:00:00 --gres=lscratch:10  --cpus-per-task=32 $code_dir/PPH.sh`;
+#chomp $annovar;
+#chomp $SIFT;
+#chomp $PPH;
+#my $join    =`sbatch --export=CODE=$code_dir,DIR=$DIR,FILE=$FILE --partition=$partition --time=100:00:00 --mem=10g --dependency=afterany:$annovar:$SIFT:$PPH $code_dir/combine.sh`;
+#print "$join";

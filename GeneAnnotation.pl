@@ -1,7 +1,7 @@
 #!/usr/bin/perl
 use strict;
 use warnings;
-
+#Gene_refGene    ACMG_Disease    ACMG_Age-to-Report      ACMG_Gene-Reviews-PubMedID      ACMG_Inheritance        ACMG_Known-vs-Expected  ACMG_LSDB
 open(ANNOTATION, "$ARGV[0]");
 my %HASH;
 my $cols=0;
@@ -10,7 +10,15 @@ while(<ANNOTATION>){
 	$_ =~ s/^#//g;
         my @local = split ("\t", $_);
 	$cols = @local;
-	$HASH{"$local[0]"} = "$_";
+	if ($_ =~ /refGene/){
+		$_ =~ s/Gene_refGene/ACMG_Gene/g;
+		$_ =~ s/Gene.refGene/ACMG_Gene/g;
+		$HASH{"Gene_refGene"} = "$_";
+		$HASH{"Gene.refGene"} = "$_";
+	}
+	else{
+		$HASH{"$local[0]"} = "$_";
+	}
 }
 close ANNOTATION;
 

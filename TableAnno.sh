@@ -10,6 +10,7 @@ BUILD=hg19
 # Add gene, cytoband,dbsnp, 1000g, ESP, CG69, NCI60 annotations
 #
 ###############################
+#       --dot2underline\
 $TOOL/table_annovar.pl\
 	$file\
 	$DATADIR\
@@ -20,7 +21,8 @@ $TOOL/table_annovar.pl\
 	-operation g,r,f,f,f,f,f,f,f,f,f,f,f,f\
 	-nastring "-1"
 mv $file.hg19_multianno.txt $file.gene
-
+rm -rf $file.refGene.invalid_input
+sed -i '1s/\./_/g' $file.gene
 ###############################
 # Add ExAC annotation
 #
@@ -84,6 +86,7 @@ $TOOL/table_annovar.pl\
 	$file\
 	$DATADIR\
 	-buildver ${BUILD}\
+	--dot2underline\
 	-out $file\
 	-remove\
 	-protocol clinvar_20150330,cosmic70\
