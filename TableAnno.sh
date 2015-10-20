@@ -104,16 +104,16 @@ $TOOL/annotate_variation.pl\
 	-otherinfo\
 	-filter\
 	-dbtype generic\
-	-genericdbfile ${BUILD}_PediatricGenome.11.24.14.txt
+	-genericdbfile ${BUILD}_PCG_10062015.txt
 awk -F "\t" '{OFS="\t"};{print $3,$4,$5,$6,$7,$2}' $file.${BUILD}_generic_dropped |sed -e 's/,/\t/g' >$file.pcg
-head -1 $DATADIR/${BUILD}_PediatricGenome.11.24.14.txt >>$file.pcg
+head -1 $DATADIR/${BUILD}_PCG_10062015.txt >>$file.pcg
 rm -rf $file.${BUILD}_generic_dropped $file.${BUILD}_generic_filtered
 ################################
 # Add HGMD
 #
 ################################
 OUT=`echo $file |sed -e 's/.anno//g'`
-$CUSTOM $DATADIR/${BUILD}_hgmd.2014.3.txt $file >$OUT.hgmd
+$CUSTOM $DATADIR/${BUILD}_hgmd.2015.3.txt $file >$OUT.hgmd
 ################################
 # Add MATCH Trial
 #

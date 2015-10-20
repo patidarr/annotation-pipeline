@@ -90,12 +90,10 @@ This pipeline annotates a txt input file containing min 5 columns (`"Chr\tStart\
 [HGMD]: https://portal.biobase-international.com/hgmd/pro/global.php#other
 NIH Users can create account and access the database [here]. Enter the code 1881-6975-97565225 in the license field during the account registration process.
 [here]: https://portal.biobase-international.com/cgi-bin/portal/login.cgi
-- **hgmd2014.3_Acc-No**: If HGMD member, accession number, gene name, defination, disease related to in HGMD, Category as defined by HGMD, and Reference Pubmed ID.
-- **hgmd2014.3.Gene**: Gene Name
-- **hgmd2014.3_GeneName**: Full Name
-- **hgmd2014.3_Disease**: Associated Disease
-- **hgmd2014.3_Category**: Category as defined by hgmd.
-- **hgmd2014.3_Reference_PMID**: PubMed ID
+- **hgmd_Acc-No**: hgmd Acc Number
+- **hgmd_Category**: Category as defined by hgmd.
+- **hgmd_GeneName**: Gene Name
+- **hgmd_Phenotype**: Associated Disease
 
 ####[MATCH] Trial 
 [MATCH]: http://www.cancer.gov/about-cancer/treatment/clinical-trials/nci-supported/nci-match
@@ -118,106 +116,47 @@ NIH Users can create account and access the database [here]. Enter the code 1881
 #####This update does not contain the name of diagnosis as annotation but it contains the link to the website which can give much more detail information about the mutation
 #####Becase the genomic changes are based on backlocation; the cDNA change in database and the mutation in question may not be same.
 
-####[mutational cancer driver genes across 12 tumor types] Gene Level annotation
-[mutational cancer driver genes across 12 tumor types]: http://www.nature.com/srep/2013/131002/srep02650/full/srep02650.html
+[**ICGC_09202015**](https://dcc.icgc.org/projects)  
+[**TCGA_07142015**](http://www.cbioportal.org/)  
+[**ALL_22237106**](http://www.ncbi.nlm.nih.gov/pubmed/22237106)  
+[**ALL_22897843**](http://www.ncbi.nlm.nih.gov/pubmed/22897843)  
+[**ALL_22897847**](http://www.ncbi.nlm.nih.gov/pubmed/22897847)  
+[**ALL_23212523**](http://www.ncbi.nlm.nih.gov/pubmed/23212523)  
+[**ALL_23334668**](http://www.ncbi.nlm.nih.gov/pubmed/23334668)  
+[**AML_23153540**](http://www.ncbi.nlm.nih.gov/pubmed/23153540)  
+[**EWS_25010205**](http://www.ncbi.nlm.nih.gov/pubmed/25010205)  
+[**EWS_25186949**](http://www.ncbi.nlm.nih.gov/pubmed/25186949)  
+[**EWS_25223734**](http://www.ncbi.nlm.nih.gov/pubmed/25223734)  
+[**GBM_18772396**](http://www.ncbi.nlm.nih.gov/pubmed/18772396)  
+[**HGG_22286216**](http://www.ncbi.nlm.nih.gov/pubmed/22286216)  
+[**HGG_24705251**](http://www.ncbi.nlm.nih.gov/pubmed/24705251)  
+[**LGG_23104868**](http://www.ncbi.nlm.nih.gov/pubmed/23104868)  
+[**LGG_23583981**](http://www.ncbi.nlm.nih.gov/pubmed/23583981)  
+[**MED_22265402**](http://www.ncbi.nlm.nih.gov/pubmed/22265402)  
+[**MED_22722829**](http://www.ncbi.nlm.nih.gov/pubmed/22722829)  
+[**MED_22722829_G**](http://www.ncbi.nlm.nih.gov/pubmed/22722829)  
+[**MED_22832583**](http://www.ncbi.nlm.nih.gov/pubmed/22832583)  
+[**MIX_24055113**](http://www.ncbi.nlm.nih.gov/pubmed/24055113)  
+[**MIX_24710217**](http://www.ncbi.nlm.nih.gov/pubmed/24710217)  
+[**MRT_22797305**](http://www.ncbi.nlm.nih.gov/pubmed/22797305)  
+[**NBL_22142829**](http://www.ncbi.nlm.nih.gov/pubmed/22142829)  
+[**NBL_22367537**](http://www.ncbi.nlm.nih.gov/pubmed/22367537)  
+[**NBL_22416102**](http://www.ncbi.nlm.nih.gov/pubmed/22416102)  
+[**NBL_23202128**](http://www.ncbi.nlm.nih.gov/pubmed/23202128)  
+[**NBL_23334666**](http://www.ncbi.nlm.nih.gov/pubmed/23334666)  
+[**NBL_24147068**](http://www.ncbi.nlm.nih.gov/pubmed/24147068)  
+[**NBL_25517749**](http://www.ncbi.nlm.nih.gov/pubmed/25517749)  
+[**NBL_26121087**](http://www.ncbi.nlm.nih.gov/pubmed/26121087)  
+[**NEO_22187960**](http://www.ncbi.nlm.nih.gov/pubmed/22187960)  
+[**OST_24703847**](http://www.ncbi.nlm.nih.gov/pubmed/24703847)  
+[**RB_24688104_G**](http://www.ncbi.nlm.nih.gov/pubmed/24688104)  
+[**RMS_22142829**](http://www.ncbi.nlm.nih.gov/pubmed/22142829)  
+[**RMS_24332040**](http://www.ncbi.nlm.nih.gov/pubmed/24332040)  
+[**RMS_24436047**](http://www.ncbi.nlm.nih.gov/pubmed/24436047)  
+[**RMS_24436047_T**](http://www.ncbi.nlm.nih.gov/pubmed/24436047)  
+[**SAR_20601955**](http://www.ncbi.nlm.nih.gov/pubmed/20601955)  
+[**UVM_TCGA**](https://tcga-data.nci.nih.gov/tcga/tcgaCancerDetails.jsp?diseaseType=UVM&diseaseName=Uveal%20Melanoma)  
 
-Follwing columns are directly from the paper. Supplimentary Table 2.
-- **Cancer Gene Census**:
-- **MuSIC**:
-- **OncodriveFM**:
-- **OncodriveCLUST**:
-- **ActiveDriver**:
-- **MutSig**:
-- **Putative Driver Category**:
-
-- **[Total_ICGC]** No of sample have mutation in ICGC population (~6500 Patients, ~50 Cancer types)
-[Total_ICGC]: https://icgc.org/
-- **[Count_TCGA_ALL]** (~16K Samples)
-[Count_TCGA_ALL]: http://www.cbioportal.org/public-portal/index.do
-- **[2008.Parsons.Glio.Multiforme]**
-[2008.Parsons.Glio.Multiforme]: http://www.sciencemag.org/content/321/5897/1807
-- **[2010.Barretina.SoftTissueSarcoma]**
-[2010.Barretina.SoftTissueSarcoma]: http://www.ncbi.nlm.nih.gov/pubmed/20601955
-- **[2011.Heravi.DICER1]**
-[2011.Heravi.DICER1]: http://www.ncbi.nlm.nih.gov/pubmed/22187960
-- **[2011.Rausch.Medulloblastoma]**
-[2011.Rausch.Medulloblastoma]: http://www.ncbi.nlm.nih.gov/pubmed/22265402
-- **[2011.Zhang Retinoblastoma]**
-[2011.Zhang Retinoblastoma]:http://www.nature.com/nature/journal/v481/n7381/full/nature10733.html
-- **[2012.Cheung.NB]**
-[2012.Cheung.NB]:http://www.ncbi.nlm.nih.gov/pubmed/22416102
-- **[2012.Gruber.AML]**
-[2012.Gruber.AML]:http://www.ncbi.nlm.nih.gov/pubmed/23153540
-- **[2012.Harrison.PoorRiskLeukemia]**
-[2012.Harrison.PoorRiskLeukemia]:http://www.sciencedirect.com/science/article/pii/S1535610812003042
-- **[2012.Jones Medulloblastoma]**
-[2012.Jones Medulloblastoma]:http://www.nature.com/nature/journal/v488/n7409/full/nature11284.html
-- **[2012.Kannar.LowerGradeGlioma]**
-[2012.Kannar.LowerGradeGlioma]: http://www.ncbi.nlm.nih.gov/pubmed/23104868
-- **[2012.Lee.Rhabdoid]**
-[2012.Lee.Rhabdoid]: http://www.ncbi.nlm.nih.gov/pubmed/22797305
-- **[2012.Molenaar.NB]**
-[2012.Molenaar.NB]: http://www.nature.com/nature/journal/v483/n7391/full/nature10910.html
-- **[2012.Roberts.HighRiskALL]**
-[2012.Roberts.HighRiskALL]: http://www.ncbi.nlm.nih.gov/pubmed/22897847
-- **[2012.Robinson.Medulloblastoma.Germline]**
-[2012.Robinson.Medulloblastoma.Germline]: http://www.ncbi.nlm.nih.gov/pubmed/22722829
-- **[2012.Robinson.Medulloblastoma Somatic]**
-[2012.Robinson.Medulloblastoma Somatic]: http://www.ncbi.nlm.nih.gov/pubmed/22722829
-- **[2012.Wu.Glioblastoma]**
-[2012.Wu.Glioblastoma]:http://www.ncbi.nlm.nih.gov/pubmed/22286216
-- **[2012.Zhang.ALL]**
-[2012.Zhang.ALL]:http://www.nature.com/nature/journal/v481/n7380/full/nature10725.html
-- **[2013.Chen Rhabdo]**
-[2013.Chen Rhabdo]:http://www.ncbi.nlm.nih.gov/pubmed/24332040
-- **[2013.Holmfeldt.HyperdiploidALL]**
-[2013.Holmfeldt.HyperdiploidALL]:http://www.ncbi.nlm.nih.gov/pubmed/23334668
-- **[2013.Loh.ALL]**
-[2013.Loh.ALL]:http://www.ncbi.nlm.nih.gov/pubmed/23212523
-- **[2013.Pugh.NB]**
-[2013.Pugh.NB]:http://www.ncbi.nlm.nih.gov/pubmed/23334666
-- **[2013.Sausen]**
-[2013.Sausen]:http://www.nature.com/ng/journal/v45/n1/full/ng.2493.html
-- **[2013.Zhang.Glioma]**
-[2013.Zhang.Glioma]:http://www.nature.com/ng/journal/v45/n6/full/ng.2611.html
-- **[2014.Chen.Osteo]**
-[2014.Chen.Osteo]:http://www.cell.com/cell-reports/abstract/S2211-1247(14)00165-X
-- **[2014.Huether.1000PediatricCancerGenomes]**
-[2014.Huether.1000PediatricCancerGenomes]: http://www.ncbi.nlm.nih.gov/pmc/articles/PMC4119022/
-- **[2014.Shern Rhabdo (44)]**
-[2014.Shern Rhabdo (44)]:  http://cancerdiscovery.aacrjournals.org/content/4/2/216.figures-only?cited-by=yes&legid=candisc;4/2/216
-- **[2014.Wu High Grade Glioma(116)]**
-[2014.Wu High Grade Glioma(116)]:http://www.nature.com/ng/journal/v46/n5/full/ng.2938.html
-- **[2014.Brohl.EWS]**
-[2014.Brohl.EWS]:http://www.ncbi.nlm.nih.gov/pubmed/25010205
-- **[2013.Dorschner.Actionable]**
-[2013.Dorschner.Actionable]:http://www.sciencedirect.com/science/article/pii/S0002929713003819
-- **[2013.Wei.DW]**
-[2013.Wei.DW]:http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0077731
-- **[2014.Shern.RMSExpressed]**
-[2014.Shern.RMSExpressed]:http://cancerdiscovery.aacrjournals.org/content/4/2/216.figures-only?cited-by=yes&legid=candisc;4/2/216
-- **[2014.Tirode.EWS]**
-[2014.Tirode.EWS]:http://cancerdiscovery.aacrjournals.org/content/early/2014/09/13/2159-8290.CD-14-0622.abstract
-- **[2014.Crompton.EWS]**
-[2014.Crompton.EWS]:http://cancerdiscovery.aacrjournals.org/content/early/2014/09/03/2159-8290.CD-13-1037.abstract
-#### - PCG_Total: Total number of patients in all studies above.
-#### - Grand_Total: Total of PCG ICGC and TCGA.
-
-####Data from 80 [uvial melanoma study(TCGA)], samples were sequenced at 4 institutions.
-[uvial melanoma study(TCGA)]: https://tcga-data.nci.nih.gov/tcga/tcgaCancerDetails.jsp?diseaseType=UVM&diseaseName=Uveal%20Melanoma
-- UVM #Centers: ";" seperated count of centers a particular mutation is found in a sample.
-- UVM #Samples: Total number of samples harbouring mutation
-
-Data from `Actionable exomic incidental findings in 6503 participants: challenges of variant classification`
-
-[PMID]
-[PMID]: 25637381
-- **IF.Actionable-exomic-incidental-findings**: Yes/No
-- **IF.Name:Name**: Change reported in paper
-- **IF.Condition(s)**: Cancer/syndrome/disease name
-- **IF.Frequency**: Frequency in population
-- **IF.Clinical-significance (Last reviewed)**: Last reviewed accoriding to clinvar
-- **IF.Review status**: Review status
 
 57 [ACMG] genes and the pertinent information.
 [ACMG]:https://www.acmg.net/docs/ACMG_Releases_Highly-Anticipated_Recommendations_on_Incidental_Findings_in_Clinical_Exome_and_Genome_Sequencing.pdf

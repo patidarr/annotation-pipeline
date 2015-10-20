@@ -1,7 +1,6 @@
 #!/usr/bin/perl
 use strict;
 use warnings;
-
 open(ANN_FH, "$ARGV[0]");
 my %ANNOVAR;
 while(<ANN_FH>){
