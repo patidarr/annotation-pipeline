@@ -113,8 +113,8 @@ NIH Users can create account and access the database [here]. Enter the code 1881
 - **MyCG_Codon**: Codon change in database
 - **MyCG_cDNA Change**: cDNA change in database
 - **MyCG_Link(s)**: Link to the page data is extracted from  
-#####This update does not contain the name of diagnosis as annotation but it contains the link to the website which can give much more detail information about the mutation  
-#####Because the genomic changes are based on backlocation; the cDNA change in database and the mutation in question may not be same.  
+- This update does not contain the name of diagnosis as annotation but it contains the link to the website which can give much more detail information about the mutation  
+- Because the genomic changes are based on backlocation; the cDNA change in database and the mutation in question may not be same.  
 
 ####ICGC, TCGA and Pediatric NextGen Studies. 
 
