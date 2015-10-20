@@ -118,6 +118,8 @@ NIH Users can create account and access the database [here]. Enter the code 1881
 
 ####ICGC, TCGA and Pediatric NextGen Studies. 
 
+[**Pediatric Studies Log **](https://docs.google.com/spreadsheets/d/1BHg-I0tLbz6OGHxy4FIb4M0GSHZV4FuEamVX0AT71yE/edit#gid=0)  
+
 [**ICGC_09202015**](https://dcc.icgc.org/projects)  
 [**TCGA_07142015**](http://www.cbioportal.org/)  
 [**ALL_22237106**](http://www.ncbi.nlm.nih.gov/pubmed/22237106)  
