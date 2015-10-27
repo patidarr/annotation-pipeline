@@ -113,9 +113,9 @@ NIH Users can create account and access the database [here]. Enter the code 1881
 
 ####[canDL] Cancer Driver Log  
 [canDL]: https://candl.osu.edu/browse
-- **CanDL_Diagnosis** Diagnosis as listed on the server
-- **CanDL_Level_of_Evidence** Level of evidence.  
-	Tier 1: Alteration has matching FDA approved or NCCN recommended therapy  
+- **CanDL_Diagnosis** Diagnosis as listed on the server  
+- **CanDL_Level_of_Evidence** Level of evidence.     
+	Tier 1: Alteration has matching FDA approved or NCCN recommended therapy    
 	Tier 2: Alteration has matching therapy based on evidence from clinical trials, case reports, or exceptional responders.  
  	Tier 3: Alteration predicts for response or resistance to therapy based on evidence from pre-clinical data (in vitro or in vivo models)  
  	Tier 4: Alteration is a putative oncogenic driver based on functional activation of a pathway  
