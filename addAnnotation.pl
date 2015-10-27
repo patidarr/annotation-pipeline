@@ -2,7 +2,11 @@
 use strict;
 use warnings;
 
-open(ANNOTATION, "$ARGV[0]");
+unless (open(ANNOTATION, "$ARGV[0]")){
+	print STDERR "Can not open file $ARGV[0]\n";
+        die;
+
+}
 my %HASH;
 my $cols=0;
 while(<ANNOTATION>){
@@ -19,7 +23,10 @@ while(<ANNOTATION>){
 }
 close ANNOTATION;
 
-open (FILE,"$ARGV[1]");
+unless (open (FILE,"$ARGV[1]")){
+	print STDERR "Can not open file $ARGV[1]\n";
+        die;
+}
 my $string="\t-1"x$cols;
 while (<FILE>){
         chomp;

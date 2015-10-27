@@ -1,7 +1,10 @@
 #!/usr/bin/perl
 use strict;
 use warnings;
-open(ANN_FH, "$ARGV[0]");
+unless (open(ANN_FH, "$ARGV[0]")){
+	print STDERR "Can not open file $ARGV[0]\n";
+	die;
+}
 my %ANNOVAR;
 while(<ANN_FH>){
 	chomp;
@@ -15,7 +18,10 @@ while(<ANN_FH>){
 }
 close ANN_FH;
 
-open (ORI,"$ARGV[1]");
+unless (open (ORI,"$ARGV[1]")){
+	print STDERR "Can not open file $ARGV[1]\n";
+        die;
+}
 
 while (<ORI>){
 	chomp;

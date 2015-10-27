@@ -95,19 +95,35 @@ NIH Users can create account and access the database [here]. Enter the code 1881
 - **hgmd_GeneName**: Gene Name
 - **hgmd_Phenotype**: Associated Disease
 
-####[MATCH] Trial 
+####[MATCH] Trial  
 [MATCH]: http://www.cancer.gov/about-cancer/treatment/clinical-trials/nci-supported/nci-match
 - **MATCH.v3 Gene**: Gene Name
 - **MATCH.v3 Inclusion Mutation**: Amino Acid Change
 - **MATCH.v3 Arm description**
 - **MATCH.v3 Level of Evidence** 
 
-####[DoCM] Database of Curated Mutations
+####[DoCM] Database of Curated Mutations  
 [DoCM]: http://docm.genome.wustl.edu/
 - **DoCM Disease**: Name of the cancer type
 - **DoCM PMID**: PubMed ID
 
-####[My Cancer Genome] If this particular mutation is present in MCG
+####[canDL] Cancer Driver Log  
+[canDL]: https://candl.osu.edu/browse
+- **CanDL_Diagnosis** Diagnosis as listed on the server
+- **CanDL_Level_of_Evidence** Level of evidence.
+	Tier 1: Alteration has matching FDA approved or NCCN recommended therapy
+	Tier 2: Alteration has matching therapy based on evidence from clinical trials, case reports, or exceptional responders.
+ 	Tier 3: Alteration predicts for response or resistance to therapy based on evidence from pre-clinical data (in vitro or in vivo models)
+ 	Tier 4: Alteration is a putative oncogenic driver based on functional activation of a pathway
+- **CanDL_PMIDs** PubMed ID
+
+####[TCC] Targated Cancer Care  
+[tcc]: https://targetedcancercare.massgeneral.org/
+- **targated_cancer_care.Gene** Gene Name
+- **targated_cancer_care.AA** Amino Acid Change
+
+
+####[My Cancer Genome] If this particular mutation is present in MCG  
 [My Cancer Genome]: http://www.mycancergenome.org/
 - **MyCG_Gene**: Name of the gene
 - **MyCG_Codon**: Codon change in database
@@ -115,6 +131,13 @@ NIH Users can create account and access the database [here]. Enter the code 1881
 - **MyCG_Link(s)**: Link to the page data is extracted from  
 - This update does not contain the name of diagnosis as annotation but it contains the link to the website which can give much more detail information about the mutation  
 - Because the genomic changes are based on backlocation; the cDNA change in database and the mutation in question may not be same.  
+
+####[CIViC] Clinical Interpretation of Variants in Cancer  
+[CIViC]: https://civic.genome.wustl.edu/#/home
+-**civic_PMID**: PubMed ID
+-**civic_Rating**: 
+-**civic_EvidenceLevel**:
+-**civic_Diagnosis**:
 
 ####ICGC, TCGA and Pediatric NextGen Studies. 
 
