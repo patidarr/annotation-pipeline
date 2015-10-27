@@ -139,10 +139,10 @@ NIH Users can create account and access the database [here]. Enter the code 1881
 
 ####[CIViC] Clinical Interpretation of Variants in Cancer  
 [CIViC]: https://civic.genome.wustl.edu/#/home
--**civic_PMID**: PubMed ID  
--**civic_Rating**:   
--**civic_EvidenceLevel**:  
--**civic_Diagnosis**:  
+- **civic_PMID**: PubMed ID  
+- **civic_Rating**:   
+- **civic_EvidenceLevel**:  
+- **civic_Diagnosis**:  
 
 ####ICGC, TCGA and Pediatric NextGen Studies. 
 
