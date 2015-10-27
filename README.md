@@ -71,8 +71,12 @@ This pipeline annotates a txt input file containing min 5 columns (`"Chr\tStart\
 
 ####[SIFT]
 [SIFT]: http://sift.jcvi.org/
-- **SIFT Prediction**: Prediction from SIFT (DAMAGING, TOLERATED, Not scored, Damaging due to stop, N/A, DAMAGING *Warning! Low confidence.)
-- **SIFT Score**: 0 = DAMAGING, 1 = TOLERATED, N/A = Damaging due to stop, Not scored, N/A
+- **SIFT Prediction**:  
+	Prediction from SIFT (DAMAGING, TOLERATED, Not scored, Damaging due to stop, N/A, DAMAGING *Warning! Low confidence.)
+- **SIFT Score**:  
+	0 = DAMAGING,  
+	1 = TOLERATED,  
+	N/A = Damaging due to stop, Not scored, N/A  
 
 ####[PolyPhen-2]
 [PolyPhen-2]: http://genetics.bwh.harvard.edu/pph2/
@@ -110,7 +114,7 @@ NIH Users can create account and access the database [here]. Enter the code 1881
 ####[canDL] Cancer Driver Log  
 [canDL]: https://candl.osu.edu/browse
 - **CanDL_Diagnosis** Diagnosis as listed on the server
-- **CanDL_Level_of_Evidence** Level of evidence.
+- **CanDL_Level_of_Evidence** Level of evidence.  
 	Tier 1: Alteration has matching FDA approved or NCCN recommended therapy  
 	Tier 2: Alteration has matching therapy based on evidence from clinical trials, case reports, or exceptional responders.  
  	Tier 3: Alteration predicts for response or resistance to therapy based on evidence from pre-clinical data (in vitro or in vivo models)  
@@ -134,10 +138,10 @@ NIH Users can create account and access the database [here]. Enter the code 1881
 
 ####[CIViC] Clinical Interpretation of Variants in Cancer  
 [CIViC]: https://civic.genome.wustl.edu/#/home
--**civic_PMID**: PubMed ID
--**civic_Rating**: 
--**civic_EvidenceLevel**:
--**civic_Diagnosis**:
+-**civic_PMID**: PubMed ID  
+-**civic_Rating**:   
+-**civic_EvidenceLevel**:  
+-**civic_Diagnosis**:  
 
 ####ICGC, TCGA and Pediatric NextGen Studies. 
 
