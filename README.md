@@ -26,10 +26,11 @@ This pipeline annotates a txt input file containing min 5 columns (`"Chr\tStart\
 - **esp6500_all**:	All 6503 Individuals
 - **esp6500_ea**:	European American
 - **esp6500_aa**:	African American
-- **[cg69]**: Frequency in 69 samples sequenced at Complete Genomics
-####[cg69]: http://www.completegenomics.com/public-data/69-genomes/	
-- **[nci60]**: Frequency in 60 Cell lines sequenced at NCI
-####[nci60]: http://discover.nci.nih.gov/cellminer/home.do
+
+####[cg69] Frequency in 69 samples sequenced at Complete Genomics  
+[cg69]: http://www.completegenomics.com/public-data/69-genomes/	
+####[nci60] Frequency in 60 Cell lines sequenced at NCI  
+[nci60]: http://discover.nci.nih.gov/cellminer/home.do
 
 ####[ExAC] Exome Aggregation Consortium Data.
 [ExAC]: http://exac.broadinstitute.org/
