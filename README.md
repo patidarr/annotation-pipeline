@@ -27,11 +27,11 @@ This pipeline annotates a txt input file containing min 5 columns (`"Chr\tStart\
 - **esp6500_ea**:	European American
 - **esp6500_aa**:	African American
 - **[cg69]**: Frequency in 69 samples sequenced at Complete Genomics
-[cg69]: http://www.completegenomics.com/public-data/69-genomes/	
+####[cg69]: http://www.completegenomics.com/public-data/69-genomes/	
 - **[nci60]**: Frequency in 60 Cell lines sequenced at NCI
-[nci60]: http://discover.nci.nih.gov/cellminer/home.do
+####[nci60]: http://discover.nci.nih.gov/cellminer/home.do
 
-[ExAC] Exome Aggregation Consortium Data.
+####[ExAC] Exome Aggregation Consortium Data.
 [ExAC]: http://exac.broadinstitute.org/
 - **ExAC_ALL**: All Individuals
 - **ExAC_AFR**: African 
@@ -42,7 +42,7 @@ This pipeline annotates a txt input file containing min 5 columns (`"Chr\tStart\
 - **ExAC_OTH**: Other
 - **ExAC_SAS**: South Asian
 
-[ClinSeq]
+####[ClinSeq]
 [ClinSeq]: http://www.genome.gov/20519355
 - **Clinseqc_genotypes**:	The number of genotypes with MPG score >=10.
 - **Clinseqc_homref**:	Number of genotypes where all alleles seen are the reference allele (I.e., if haploid, one reference allele, and if diploid, two reference alleles).
@@ -84,10 +84,10 @@ This pipeline annotates a txt input file containing min 5 columns (`"Chr\tStart\
 - **PPH2 Class**: (neutral, deleterious)
 - **PPH2 Probability**: (neutral, deleterious)
 
-####- [clinvar_20150330]
+####[clinvar_20150330]
 [clinvar_20150330]: http://www.ncbi.nlm.nih.gov/clinvar/
 
-####- [cosmic70]
+####[cosmic70]
 [cosmic70]: http://cancer.sanger.ac.uk/cancergenome/projects/cosmic/
 
 ####[HGMD]
@@ -127,7 +127,7 @@ NIH Users can create account and access the database [here]. Enter the code 1881
 - **targated_cancer_care.AA** Amino Acid Change
 
 
-####[My Cancer Genome] If this particular mutation is present in MCG  
+####[My Cancer Genome]   
 [My Cancer Genome]: http://www.mycancergenome.org/
 - **MyCG_Gene**: Name of the gene
 - **MyCG_Codon**: Codon change in database
@@ -189,7 +189,7 @@ NIH Users can create account and access the database [here]. Enter the code 1881
 [**UVM_TCGA**](https://tcga-data.nci.nih.gov/tcga/tcgaCancerDetails.jsp?diseaseType=UVM&diseaseName=Uveal%20Melanoma)  
 
 
-57 [ACMG] genes and the pertinent information.
+####57 [ACMG] genes and the pertinent information.
 [ACMG]:https://www.acmg.net/docs/ACMG_Releases_Highly-Anticipated_Recommendations_on_Incidental_Findings_in_Clinical_Exome_and_Genome_Sequencing.pdf
 - **Gene.refGene**
 - **ACMG_Disease**
