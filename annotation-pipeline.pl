@@ -78,8 +78,8 @@ else{
 
 
 my $annovar =`sbatch --export=CODE=$code_dir,DIR=$DIR,FILE=$FILE --partition=$partition --time=100:00:00 --cpus-per-task=30 $code_dir/TableAnno.sh`;
-my $SIFT    =`sbatch --export=CODE=$code_dir,DIR=$DIR,FILE=$FILE --partition=$partition --time=100:00:00 --mem=5g --cpus-per-task=2 $code_dir/SIFT.sh`;
-my $PPH     =`sbatch --export=CODE=$code_dir,DIR=$DIR,FILE=$FILE --partition=$partition --time=100:00:00 --gres=lscratch:10 --cpus-per-task=2 $code_dir/PPH.sh`;
+my $SIFT    =`sbatch --export=CODE=$code_dir,DIR=$DIR,FILE=$FILE --partition=$partition --time=100:00:00 --gres=lscratch:20 --mem=5g --cpus-per-task=2 $code_dir/SIFT.sh`;
+my $PPH     =`sbatch --export=CODE=$code_dir,DIR=$DIR,FILE=$FILE --partition=$partition --time=100:00:00 --gres=lscratch:10 --cpus-per-task=32 --mem=50g $code_dir/PPH.sh`;
 chomp $annovar;
 chomp $SIFT;
 chomp $PPH;
