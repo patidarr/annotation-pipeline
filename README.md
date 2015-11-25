@@ -102,10 +102,8 @@ NIH Users can create account and access the database [here]. Enter the code 1881
 
 ####[MATCH] Trial  
 [MATCH]: http://www.cancer.gov/about-cancer/treatment/clinical-trials/nci-supported/nci-match
-- **MATCH.v3 Gene**: Gene Name
-- **MATCH.v3 Inclusion Mutation**: Amino Acid Change
-- **MATCH.v3 Arm description**
-- **MATCH.v3 Level of Evidence** 
+- **MATCH_ArmID**: Name of the MATCH Trial Treatment Arm.
+Details are available [here]: https://matchbox.nci.nih.gov/matchbox/views/treatmentArmsDetails.html?treatmentArmId=EAY131-A&treatmentArmsList=true  
 
 ####[DoCM] Database of Curated Mutations  
 [DoCM]: http://docm.genome.wustl.edu/
