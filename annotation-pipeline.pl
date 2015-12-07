@@ -71,27 +71,12 @@ else{
 #########################
 `cd $DIR; $code_dir/MakeAnnotationInputs.pl $FILE `;
 
-#my $annovar =`qsub -v CODE=$code_dir -v DIR=$DIR -v FILE=$FILE -q ccr -l nodes=1 $code_dir/TableAnno.sh`;
-#my $SIFT    =`qsub -v CODE=$code_dir -v DIR=$DIR -v FILE=$FILE -q ccr -l nodes=1 $code_dir/SIFT.sh`;
-#my $PPH     =`qsub -v CODE=$code_dir -v DIR=$DIR -v FILE=$FILE -q ccr -l nodes=1 $code_dir/PPH.sh`;
-
-
-
-my $annovar =`sbatch --export=CODE=$code_dir,DIR=$DIR,FILE=$FILE --partition=$partition --time=100:00:00 --cpus-per-task=30 $code_dir/TableAnno.sh`;
-my $SIFT    =`sbatch --export=CODE=$code_dir,DIR=$DIR,FILE=$FILE --partition=$partition --time=100:00:00 --gres=lscratch:20 --mem=5g --cpus-per-task=2 $code_dir/SIFT.sh`;
-my $PPH     =`sbatch --export=CODE=$code_dir,DIR=$DIR,FILE=$FILE --partition=$partition --time=100:00:00 --gres=lscratch:10 --cpus-per-task=32 --mem=50g $code_dir/PPH.sh`;
+my $arg = "--export=CODE=$code_dir,DIR=$DIR,FILE=$FILE --partition=$partition --time=100:00:00";
+my $annovar =`sbatch $arg --cpus-per-task=30 $code_dir/TableAnno.sh`;
+my $SIFT    =`sbatch $arg --gres=lscratch:20 --mem=05g --cpus-per-task=2  $code_dir/SIFT.sh`;
+my $PPH     =`sbatch $arg --gres=lscratch:10 --mem=10g --cpus-per-task=10 $code_dir/PPH.sh`;
 chomp $annovar;
 chomp $SIFT;
 chomp $PPH;
 my $join    =`sbatch --export=CODE=$code_dir,DIR=$DIR,FILE=$FILE --partition=$partition --time=100:00:00 --mem=10g --dependency=afterany:$annovar:$SIFT:$PPH $code_dir/combine.sh`;
 print "$join";
-
-
-#my $annovar =`sbatch --export=CODE=$code_dir,DIR=$DIR,FILE=$FILE --partition=$partition --time=100:00:00 --cpus-per-task=2 $code_dir/TableAnno.sh`;
-#my $SIFT    =`sbatch --export=CODE=$code_dir,DIR=$DIR,FILE=$FILE --partition=$partition --time=100:00:00 --gres=lscratch:200 --cpus-per-task=2 $code_dir/SIFT.sh`;
-#my $PPH     =`sbatch --export=CODE=$code_dir,DIR=$DIR,FILE=$FILE --partition=$partition --exclusive --time=100:00:00 --gres=lscratch:10  --cpus-per-task=32 $code_dir/PPH.sh`;
-#chomp $annovar;
-#chomp $SIFT;
-#chomp $PPH;
-#my $join    =`sbatch --export=CODE=$code_dir,DIR=$DIR,FILE=$FILE --partition=$partition --time=100:00:00 --mem=10g --dependency=afterany:$annovar:$SIFT:$PPH $code_dir/combine.sh`;
-#print "$join";

@@ -145,17 +145,6 @@ $CUSTOM $DATADIR/${BUILD}_targated_cancer_care_10262015.txt $file >$OUT.tcc
 #
 ################################
 $CUSTOM $DATADIR/${BUILD}_civic_10262015.txt $file >$OUT.civic
-
-################################
-# Add GermlineActionable
-#
-################################
-$CUSTOM $DATADIR/${BUILD}_GermlineActionable.txt $file >$OUT.germline
-################################
-# Add Uveal Melanoma
-#
-################################
-$CUSTOM $DATADIR/${BUILD}_uveal_melanoma.txt $file >$OUT.uvm
 ################################
 #
 #
