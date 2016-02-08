@@ -27,13 +27,8 @@ This pipeline annotates a txt input file containing min 5 columns (`"Chr\tStart\
 - **esp6500_ea**:	European American
 - **esp6500_aa**:	African American
 
-####[cg69] Frequency in 69 samples sequenced at Complete Genomics  
-[cg69]: http://www.completegenomics.com/public-data/69-genomes/	
-####[nci60] Frequency in 60 Cell lines sequenced at NCI  
-[nci60]: http://discover.nci.nih.gov/cellminer/home.do
-
-####[ExAC] Exome Aggregation Consortium Data. v0.3
-[ExAC]: http://exac.broadinstitute.org/ 
+####[ExAC] Exome Aggregation Consortium Data. v0.3 nonTCGA data
+[ExAC]: http://exac.broadinstitute.org/
 - **ExAC_ALL_nonTCGA**: Excluding TCGA cohorts (53,105 samples)
 - **ExAC_AFR_nonTCGA**:
 - **ExAC_AMR_nonTCGA**:
@@ -42,6 +37,13 @@ This pipeline annotates a txt input file containing min 5 columns (`"Chr\tStart\
 - **ExAC_NFE_nonTCGA**:
 - **ExAC_OTH_nonTCGA**:
 - **ExAC_SAS_nonTCGA**:
+
+####[cg69] Frequency in 69 samples sequenced at Complete Genomics  
+[cg69]: http://www.completegenomics.com/public-data/69-genomes/	
+####[nci60] Frequency in 60 Cell lines sequenced at NCI  
+[nci60]: http://discover.nci.nih.gov/cellminer/home.do
+####[ExAC] Exome Aggregation Consortium Data. v0.3
+[ExAC]: http://exac.broadinstitute.org/ 
 - **ExAC_ALL**: All Individuals (60,706 samples)
 - **ExAC_AFR**: African 
 - **ExAC_AMR**: American
