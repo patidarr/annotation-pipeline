@@ -17,8 +17,8 @@ $TOOL/table_annovar.pl\
 	-buildver ${BUILD}\
 	-out $file\
 	-remove\
-	-protocol refGene,cytoBand,snp138,1000g2014oct_all,1000g2014oct_eur,1000g2014oct_afr,1000g2014oct_amr,1000g2014oct_eas,1000g2014oct_sas,esp6500_all,esp6500_ea,esp6500_aa,cg69,nci60\
-	-operation g,r,f,f,f,f,f,f,f,f,f,f,f,f\
+	-protocol refGene,cytoBand,snp138,1000g2014oct_all,1000g2014oct_eur,1000g2014oct_afr,1000g2014oct_amr,1000g2014oct_eas,1000g2014oct_sas,esp6500_all,esp6500_ea,esp6500_aa,exac03nontcga,cg69,nci60\
+	-operation g,r,f,f,f,f,f,f,f,f,f,f,f,f,f\
 	-nastring "-1"
 mv $file.hg19_multianno.txt $file.gene
 rm -rf $file.refGene.invalid_input
@@ -149,6 +149,7 @@ $CUSTOM $DATADIR/${BUILD}_civic_10262015.txt $file >$OUT.civic
 #
 #
 ################################
+echo "Everything Finished"
 rm -rf $file.invalid_input
 rm -rf $file.refGene.invalid_input
 rm -rf $file.log
