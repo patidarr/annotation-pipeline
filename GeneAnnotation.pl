@@ -2,11 +2,7 @@
 use strict;
 use warnings;
 #Gene_refGene    ACMG_Disease    ACMG_Age-to-Report      ACMG_Gene-Reviews-PubMedID      ACMG_Inheritance        ACMG_Known-vs-Expected  ACMG_LSDB
-
-unless (open(ANNOTATION, "$ARGV[0]")){
-print STDERR "Can not open file $ARGV[0]\n";
-        die;
-}
+open(ANNOTATION, "$ARGV[0]");
 my %HASH;
 my $cols=0;
 while(<ANNOTATION>){
@@ -26,12 +22,7 @@ while(<ANNOTATION>){
 }
 close ANNOTATION;
 
-unless (open (FILE,"$ARGV[1]")){
-	print STDERR "Can not open file $ARGV[1]\n";
-        die;
-
-}
-
+open (FILE,"$ARGV[1]");
 my $string="\t-"x$cols;
 while (<FILE>){
         chomp;
