@@ -72,7 +72,7 @@ else{
 `cd $DIR; $code_dir/MakeAnnotationInputs.pl $FILE `;
 
 my $list = <<END;
-$FILE
+$FILE.anno
 $FILE.anno.gene
 $FILE.anno.exac.3
 $FILE.anno.clinseq
@@ -97,7 +97,7 @@ print OUT "#!/bin/sh\n";
 print OUT "#SBATCH --job-name=\"Annotation\"\n";
 print OUT "cd $DIR\n";
 print OUT "perl $code_dir/CombineAnnotations.pl $FILE.list >$FILE.tmp\n";
-print OUT "perl $code_dir/GeneAnnotation.pl  $data_dir/hg19_ACMG.txt $FILE.tmp >$FILE.annotations.final.txt\n";
+print OUT "perl $code_dir/GeneAnnotation.pl  $data_dir/hg19_ACMG.txt $FILE.tmp |perl $code_dir/addAnnotations2vcf.pl - $FILE >$FILE.annotations.final.txt\n";
 print OUT "rm -rf $FILE.tmp $FILE.anno.gene $FILE.anno.exac.3 $FILE.anno.clinseq $FILE.anno.cadd $FILE.sift.out $FILE.clinvar $FILE.anno.cosmic $FILE.hgmd $FILE.match $FILE.docm $FILE.candl $FILE.tcc $FILE.mcg $FILE.civic $FILE.anno.pcg $FILE.anno $FILE.pph $FILE.sift $FILE.sift_predictions.tsv $FILE.list $FILE.final.sh \n";
 close OUT;
 
