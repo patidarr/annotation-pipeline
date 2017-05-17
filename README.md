@@ -1,8 +1,11 @@
-#annotation-pipeline
+# annotation-pipeline
 
-This pipeline annotates a txt input file containing min 5 columns (`"Chr\tStart\tEnd\tRef\tAlt"`) with the following annotations.
+This pipeline annotates a txt input file containing min 5 columns (`"Chr\tStart\tEnd\tRef\tAlt"`) with the annotations below.
 
-####[ANNOVAR]
+## How to run .
+`perl annotation-pipeline.pl -infile <NameOfYourFile>`
+
+#### [ANNOVAR]
 [ANNOVAR]: http://annovar.openbioinformatics.org/en/latest/
 - **Func.refGene**:	Tells whether the variant hit exons or hit intergenic regions, or hit introns, or hit a non-coding RNA genes.
 - **Gene.refGene**:	If the variant is exonic/intronic/ncRNA, this column gives the gene name (if multiple genes are hit, comma will be added between gene names); if not, the column will give the two neighboring genes and the distance to these neighboring genes.
@@ -12,7 +15,7 @@ This pipeline annotates a txt input file containing min 5 columns (`"Chr\tStart\
 - **cytoBand**: Cytogenic band.
 - **snp138**:	dbsnp138 annotation. if present then rs id will be present else -1
 
-####[Frequencies from 1000 genome new release]
+#### [Frequencies from 1000 genome new release]
 [Frequencies from 1000 genome new release]: http://www.1000genomes.org/category/frequently-asked-questions/population
 - **1000g2014oct_all**: All Individuals from the October 2014 release
 - **1000g2014oct_eur**: European Individuals from the October 2014 release
@@ -21,13 +24,13 @@ This pipeline annotates a txt input file containing min 5 columns (`"Chr\tStart\
 - **1000g2014oct_eas**: East Asian Individuals from the October 2014 release
 - **1000g2014oct_sas**: South Asian Individuals from the October 2014 release
 
-####[NHLBI]
+#### [NHLBI]
 [NHLBI]: http://evs.gs.washington.edu/EVS/
 - **esp6500_all**:	All 6503 Individuals
 - **esp6500_ea**:	European American
 - **esp6500_aa**:	African American
 
-####[ExAC] Exome Aggregation Consortium Data. v0.3 nonTCGA data
+#### [ExAC] Exome Aggregation Consortium Data. v0.3 nonTCGA data
 [ExAC]: http://exac.broadinstitute.org/
 - **ExAC_ALL_nonTCGA**: Excluding TCGA cohorts (53,105 samples)
 - **ExAC_AFR_nonTCGA**:
@@ -38,7 +41,7 @@ This pipeline annotates a txt input file containing min 5 columns (`"Chr\tStart\
 - **ExAC_OTH_nonTCGA**:
 - **ExAC_SAS_nonTCGA**:
 
-####[cg69] Frequency in 69 samples sequenced at Complete Genomics  
+#### [cg69] Frequency in 69 samples sequenced at Complete Genomics  
 [cg69]: http://www.completegenomics.com/public-data/69-genomes/	
 ####[nci60] Frequency in 60 Cell lines sequenced at NCI  
 [nci60]: http://discover.nci.nih.gov/cellminer/home.do
@@ -53,7 +56,7 @@ This pipeline annotates a txt input file containing min 5 columns (`"Chr\tStart\
 - **ExAC_OTH**: Other
 - **ExAC_SAS**: South Asian
 
-####[ClinSeq]
+#### [ClinSeq]
 [ClinSeq]: http://www.genome.gov/20519355
 - **Clinseqc_genotypes**:	The number of genotypes with MPG score >=10.
 - **Clinseqc_homref**:	Number of genotypes where all alleles seen are the reference allele (I.e., if haploid, one reference allele, and if diploid, two reference alleles).
@@ -75,12 +78,12 @@ This pipeline annotates a txt input file containing min 5 columns (`"Chr\tStart\
 - **Clinseqmaf**:	The frequency of the minor allele compared to the sum of all alleles.
 - **Clinseqchisquare**:	The chi-square value (NOT p-value) calculated using the genotypes AA, Aa, aa where A is the major allele and a is the minor allele (major and minor can only be reference or variant)
 
-####[CADD]
+#### [CADD]
 [CADD]: http://cadd.gs.washington.edu/
 - **CADD**:  Combined Annotation Dependent Depletion (CADD) Score
 - **CADD_Phred**:  Combined Annotation Dependent Depletion (CADD) Score
 
-####[SIFT]
+#### [SIFT]
 [SIFT]: http://sift.jcvi.org/
 - **SIFT Prediction**:  
 	Prediction from SIFT (DAMAGING, TOLERATED, Not scored, Damaging due to stop, N/A, DAMAGING *Warning! Low confidence.)
@@ -89,19 +92,19 @@ This pipeline annotates a txt input file containing min 5 columns (`"Chr\tStart\
 	1 = TOLERATED,  
 	N/A = Damaging due to stop, Not scored, N/A  
 
-####[PolyPhen-2]
+#### [PolyPhen-2]
 [PolyPhen-2]: http://genetics.bwh.harvard.edu/pph2/
 - **PPH2 Prediction**:(benign, possibly damaging, probably damaging)
 - **PPH2 Class**: (neutral, deleterious)
 - **PPH2 Probability**: (neutral, deleterious)
 
-####[clinvar_20150330]
+#### [clinvar_20150330]
 [clinvar_20150330]: http://www.ncbi.nlm.nih.gov/clinvar/
 
-####[cosmic70]
+#### [cosmic70]
 [cosmic70]: http://cancer.sanger.ac.uk/cancergenome/projects/cosmic/
 
-####[HGMD]
+#### [HGMD]
 [HGMD]: https://portal.biobase-international.com/hgmd/pro/global.php#other
 NIH Users can create account and access the database [here]. Enter the code 1881-6975-97565225 in the license field during the account registration process.
 [here]: https://portal.biobase-international.com/cgi-bin/portal/login.cgi
@@ -110,19 +113,19 @@ NIH Users can create account and access the database [here]. Enter the code 1881
 - **hgmd_GeneName**: Gene Name
 - **hgmd_Phenotype**: Associated Disease
 
-####[MATCH] Trial  
+#### [MATCH] Trial  
 [MATCH]: http://www.cancer.gov/about-cancer/treatment/clinical-trials/nci-supported/nci-match
 - **MATCH_ArmID**: Name of the MATCH Trial Treatment Arm.  
 Details are available [here]
 [here]: https://matchbox.nci.nih.gov/matchbox/views/treatmentArmsDetails.html?treatmentArmId=EAY131-A&treatmentArmsList=true
   
 
-####[DoCM] Database of Curated Mutations  
+#### [DoCM] Database of Curated Mutations  
 [DoCM]: http://docm.genome.wustl.edu/
 - **DoCM Disease**: Name of the cancer type
 - **DoCM PMID**: PubMed ID
 
-####[canDL] Cancer Driver Log  
+#### [canDL] Cancer Driver Log  
 [canDL]: https://candl.osu.edu/browse
 - **CanDL_Diagnosis** Diagnosis as listed on the server  
 - **CanDL_Level_of_Evidence** Level of evidence.     
@@ -132,13 +135,13 @@ Details are available [here]
  	Tier 4: Alteration is a putative oncogenic driver based on functional activation of a pathway  
 - **CanDL_PMIDs** PubMed ID
 
-####[TCC] Targated Cancer Care  
+#### [TCC] Targated Cancer Care  
 [tcc]: https://targetedcancercare.massgeneral.org/
 - **targated_cancer_care.Gene** Gene Name
 - **targated_cancer_care.AA** Amino Acid Change
 
 
-####[My Cancer Genome]   
+#### [My Cancer Genome]   
 [My Cancer Genome]: http://www.mycancergenome.org/
 - **MyCG_Gene**: Name of the gene
 - **MyCG_Codon**: Codon change in database
@@ -147,14 +150,14 @@ Details are available [here]
 - This update does not contain the name of diagnosis as annotation but it contains the link to the website which can give much more detail information about the mutation  
 - Because the genomic changes are based on backlocation; the cDNA change in database and the mutation in question may not be same.  
 
-####[CIViC] Clinical Interpretation of Variants in Cancer  
+#### [CIViC] Clinical Interpretation of Variants in Cancer  
 [CIViC]: https://civic.genome.wustl.edu/#/home
 - **civic_PMID**: PubMed ID  
 - **civic_Rating**:   
 - **civic_EvidenceLevel**:  
 - **civic_Diagnosis**:  
 
-####ICGC, TCGA and Pediatric NextGen Studies. 
+#### ICGC, TCGA and Pediatric NextGen Studies. 
 
 [** Pediatric Studies Log **](https://docs.google.com/spreadsheets/d/1BHg-I0tLbz6OGHxy4FIb4M0GSHZV4FuEamVX0AT71yE/edit#gid=0)  
 
@@ -222,7 +225,7 @@ Details are available [here]
 [**WT_25670082**](http://www.ncbi.nlm.nih.gov/pubmed/25670082)  
 And data downloaded from [FoundationMedicine](https://pediatric-data.foundationmedicine.com/)
 
-####57 [ACMG] genes and the pertinent information.
+#### 57 [ACMG] genes and the pertinent information.
 [ACMG]:https://www.acmg.net/docs/ACMG_Releases_Highly-Anticipated_Recommendations_on_Incidental_Findings_in_Clinical_Exome_and_Genome_Sequencing.pdf
 - **Gene.refGene**
 - **ACMG_Disease**
@@ -232,5 +235,4 @@ And data downloaded from [FoundationMedicine](https://pediatric-data.foundationm
 - **ACMG_Known-vs-Expected**
 - **ACMG_LSDB**
 
-## How to run .
-`perl annotation-pipeline.pl -infile <NameOfYourFile>`
+
